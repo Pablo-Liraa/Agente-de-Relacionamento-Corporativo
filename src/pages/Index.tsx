@@ -125,16 +125,19 @@ const Index = () => {
   return (
     <div className="flex min-h-screen flex-col bg-[image:var(--gradient-subtle)]">
       <header className="border-b border-border bg-card/60 backdrop-blur-sm">
-        <div className="container flex items-center gap-3 py-4">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-elegant)]">
-            <Sparkles className="h-5 w-5" />
+        <div className="container flex items-center justify-between py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-elegant)]">
+              <Sparkles className="h-5 w-5" />
+            </div>
+            <div>
+              <h1 className="text-lg font-semibold text-foreground">Agente de Relacionamento Corporativo</h1>
+              <p className="text-xs text-muted-foreground">
+                Assistente para gestores em conversas sensíveis com colaboradores
+              </p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-lg font-semibold text-foreground">Agente de Relacionamento Corporativo</h1>
-            <p className="text-xs text-muted-foreground">
-              Assistente para gestores em conversas sensíveis com colaboradores
-            </p>
-          </div>
+          <ThemeToggle />
         </div>
       </header>
 
