@@ -3,6 +3,7 @@ import { Send, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ChatMessage } from "@/components/ChatMessage";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { toast } from "sonner";
 
 type Msg = { role: "user" | "assistant"; content: string };
